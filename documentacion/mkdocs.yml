@@ -1,0 +1,7 @@
+site_name: Documentacion as an when foundation
+
+nav:
+   - home: index.md
+   - tecnologias: tecnologias usadas.md
+   - problemas: problemas.md
+   - organizacion: organizacion.md
