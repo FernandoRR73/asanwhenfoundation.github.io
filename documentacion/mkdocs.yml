@@ -1,4 +1,5 @@
 site_name: Documentacion as an when foundation
+site_url: https://asanwhenfoundation.org/
 
 nav:
    - home: index.md
