@@ -5,3 +5,5 @@ nav:
    - tecnologias: tecnologias usadas.md
    - problemas: problemas.md
    - organizacion: organizacion.md
+
+theme: readthedocs
