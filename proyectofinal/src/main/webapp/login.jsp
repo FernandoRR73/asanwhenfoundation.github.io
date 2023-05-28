@@ -16,36 +16,43 @@
       background-size: cover;
       background-repeat: no-repeat;
     }
+
+     #contraseña:focus {
+       -webkit-text-security: none; /* Para navegadores basados en WebKit */
+       text-security: none; /* Para navegadores estándar */
+     }
   </style>
 </head>
 <body>
 <header>
   <nav>
     <div class="nav-box"><a href="index.jsp">Inicio</a></div>
-    <div class="nav-box"><a href="registration_contributor.jsp">Registrarse</a></div>
+    <div class="nav-box"><a href="registrationIndex.jsp">Registrarse</a></div>
     <div class="nav-box"><a href="login.jsp">Entrar</a></div>
   </nav>
 </header>
 
 <div>
-  <h1>Formulario de Inicio de Sesión</h1>
+  <h1>¡Entra!</h1>
 
-  <form class="register-form" id="login-form" method="POST" action="login_process.jsp">
-    <label for="usuario">Usuario:</label>
-    <input type="text" id="usuario" name="usuario" required>
 
-    <label for="contrasena">Contraseña:</label>
-    <input type="password" id="contrasena" name="contrasena" required>
 
-    <p style="text-align: center; font-size: 16px;">
-      ¿No tienes una cuenta? ¡<a href="registration_contributor.jsp">Regístrate</a>!
+  <form id="login-form" method="POST" action="login_process.jsp">
+    <label for="nombre">Usuario:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="contraseña">Contraseña:</label>
+    <input type="password" id="contraseña" name="contraseña" required oninput="mostrarContrasena(this)">
+
+    <p>
+      ¿No tienes una cuenta? <a href="registrationIndex.jsp">Regístrate</a>
     </p>
 
     <input class="button" type="submit" value="Iniciar Sesión">
   </form>
 
-  <div id="message-container" style="display: none;">
-    <p class="message" style="text-align: center; font-size: 16px;">Ya has iniciado sesión</p>
+  <div id="message-container">
+    <p class="message" style="display: none">Ya has iniciado sesión</p>
     <button class="button" id="volver-al-inicio-button">Volver al inicio</button>
   </div>
 </div>

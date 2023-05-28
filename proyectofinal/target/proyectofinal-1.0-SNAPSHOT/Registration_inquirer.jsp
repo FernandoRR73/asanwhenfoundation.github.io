@@ -29,7 +29,7 @@
 <div class="centered-content">
   <h1>Registrate aquí</h1>
 
-    <form class="register-form" id="register-form" method="post" action="r_process_contributor.jsp">
+    <form class="register-form" id="register-form" method="post" action="r_process_solici.jsp">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre">
 
